@@ -73,7 +73,7 @@ def main() -> None:
 
     - Reads the Kafka topic name and consumer group ID from environment variables.
     - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Calls `consume_messages` to process messages from the Kafka topic.
+    - Processes messages from the Kafka topic.
     """
     logger.info("START consumer.")
 
