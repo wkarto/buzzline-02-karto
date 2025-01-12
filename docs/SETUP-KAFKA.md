@@ -123,7 +123,7 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 Keep this terminal open while working with Kafka.
 
 
-### Step 8: Start Kafka (Terminal 2)
+## Step 8: Start Kafka (Terminal 2)
 
 Open a NEW terminal. If Windows, open PowerShell and run `wsl` to get a WSL terminal first.
 
@@ -137,7 +137,7 @@ bin/kafka-server-start.sh config/server.properties
 
 Keep this terminal open while working with Kafka. 
 
-### Step 7: Verify Kafka Installation
+## Step 9: Test Kafka Installation (By Creating a Topic)
 
 Open a NEW terminal. If Windows, open PowerShell and run `wsl` to get a WSL terminal first.
 
@@ -164,6 +164,6 @@ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 You should see test-topic in the output.
 
 
-### Recommended Resources
+## Recommended Resources
 
 - [Kafka Quickstart Guide](https://kafka.apache.org/quickstart)
