@@ -13,7 +13,7 @@ We write producers that send data to topics and consumers that read from topics.
 
 > Kafka needs space - it's big. We'll use the Windows Subsystem for Linux on Windows machines. 
 
-## Task 1. Install Kafka (using WSL if Windows)
+## Task 1. Install and Start Kafka (using WSL if Windows)
 
 Before starting, ensure you have completed the setup tasks in <https://github.com/denisecase/buzzline-01-case> first. 
 Python 3.11 is required. 
