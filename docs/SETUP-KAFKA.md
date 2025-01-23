@@ -99,22 +99,18 @@ Zookeeper’s default configuration should work fine. You can review its configu
  ~/kafka/config/zookeeper.properties.
 
 
-## Step 6: Configure Kafka & If Windows, Forward
-Open Kafka’s configuration file at ~/kafka/config/server.properties
-Copy and paste the contents of the docs/server.properties file found in this repo to replace the entire contents.
-Save your file and exit.
+## Step 6: Configure Kafka
 
-### OPTIONAL & NOT EXPECTED TO BE NEEDED
+1. Open Kafka’s configuration file at ~/kafka/config/server.properties.[1] 
+2. Copy and paste the contents of the docs/server.properties file found in this repo to replace the entire contents.
+3. Save your file and exit.
 
-   If Windows, forward the wsl port to local host by running the following command in wsl:
-   ```
-   sudo iptables -t nat -A PREROUTING -p tcp --dport 9092 -j DNAT --to-destination $(hostname -I | awk '{print $1}'):9092
-   ```
-
-   If windows, allow responses to the forwarded traffic by running the following command in wsl:
-   ```zsh
-   sudo iptables -t nat -A POSTROUTING -j MASQUERADE
-   ```
+Note [1] On Windows machines:
+   1. Open File Explorer
+   2. Enter "\\wsl$" (don't enter the quotations) into the file bar at the top
+   3. Go to Ubuntu -> home ->(your username) ->kafka->config
+   4. In the config folder there will be a server file. ( when you select that file it will ask if you want to allow... you do)
+   5. Update that file by overwriting the contents from the docs/server.properties file provided in this repo. 
 
 ## Step 7: Start Zookeeper Service (Terminal 1)
 
