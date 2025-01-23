@@ -113,10 +113,12 @@ Save the file and exit.
 In a terminal (WSL/Mac/Linux):
 
 1. Navigate to the Kafka directory.
-2. Start Zookeeper service. 
+2. Ensure we have execute permissions (may not be necessary)
+3. Start Zookeeper service. 
 
 ```zsh
 cd ~/kafka
+chmod +x zookeeper-server-start.sh
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 
@@ -128,10 +130,12 @@ Keep this terminal open while working with Kafka.
 Open a NEW terminal. If Windows, open PowerShell and run `wsl` to get a WSL terminal first.
 
 1. Navigate to the Kafka directory.
-2. Start Kafka service. 
+2. Ensure we have execute permissions (may not be necessary)
+3. Start Kafka service. 
 
 ```zsh
 cd ~/kafka
+chmod +x kafka-server-start.sh
 bin/kafka-server-start.sh config/server.properties
 ```
 
