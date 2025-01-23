@@ -101,8 +101,8 @@ Zookeeper’s default configuration should work fine. You can review its configu
 
 ## Step 6: Configure Kafka & If Windows, Forward
 Open Kafka’s configuration file at ~/kafka/config/server.properties
-Copy and paste the contents of [docs/server.properties](docs/server.properties)
-Save the file and exit.
+Copy and paste the contents of the docs/server.properties file found in this repo.
+Save your file and exit.
 
 ### OPTIONAL & NOT EXPECTED TO BE NEEDED
 
