@@ -66,8 +66,9 @@ java --version
 In your terminal (WSL/Mac/Linux):
 
 1. Navigate to your home directory where you downloaded the file. 
-2. List the file contents.
-3. Extract the contents of the zipfile using the tar command below.
+2. List the folder contents and ensure the zipfile name is correct.
+3. Extract the contents of the zipfile using the tar command.
+4. List the folder contents again to confirm.
 
 ```zsh
 cd ~
@@ -76,13 +77,20 @@ tar -xvzf kafka_2.13-3.9.0.tgz -C ~/
 ls
 ```
 
-## Step 4: Rename the Folder (to kafka)
+## Step 4: Rename the Folder (to kafka) and Ensure Execute Permissions
 
-To simplify future commands, rename/move the extracted folder to ~/kafka:
+In your terminal (WSL/Mac/Linux):
+
+1. Rename/move the extracted folder to ~/kafka.
+2. Change diretory to ~/kafka.
+3. Recursively add execute permissions to all scripts in the bin directory.
+4. Verify that we have execute permission for files in the bin directory. 
 
 ```bash
 mv ~/kafka_2.13-3.9.0 ~/kafka
-ls
+cd ~/kafka
+chmod -R +x bin
+ls -l bin
 ```
 
 ## Step 5: Configure Zookeeper
