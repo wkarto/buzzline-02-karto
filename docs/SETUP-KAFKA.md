@@ -61,13 +61,13 @@ java --version
    1. ~ on Mac/Linux
    2. On Windows, save using File Explorer. Change the following to your wsl username and paste it into the Explorer address bar: \\wsl.localhost\Ubuntu\home\denisecase
 
-## Step 3: Extract Kafka to home directory
+## Step 3: Extract Kafka to home directory using tar
 
 In your terminal (WSL/Mac/Linux):
 
 1. Navigate to your home directory where you downloaded the file. 
 2. List the file contents.
-3. Extract the contents of the zipfile.
+3. Extract the contents of the zipfile using the tar command below.
 
 ```zsh
 cd ~
