@@ -175,6 +175,11 @@ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 You should see test-topic in the output.
 
+## Troubleshooting - Mac & Homebrew
+
+If you're on a Mac, try "brew services start kafka" and "brew services start zookeeper". 
+
+Quit those brew services once you're finished or zookeeper will continue to run in the background.
 
 ## Recommended Resources
 
