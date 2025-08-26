@@ -24,11 +24,7 @@ from utils.utils_producer import (
 )
 from utils.utils_logger import logger
 
-#####################################
-# Load Environment Variables
-#####################################
 
-load_dotenv()
 
 #####################################
 # Getter Functions for .env Variables
@@ -101,6 +97,8 @@ def main():
     - Streams generated buzz message strings to the Kafka topic.
     """
     logger.info("START producer.")
+    logger.info("Loading environment variables from .env file...")
+    load_dotenv()
     verify_services()
 
     # fetch .env content
