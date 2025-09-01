@@ -84,6 +84,23 @@ source .venv/bin/activate
 python3 -m producers.kafka_producer_case
 ```
 
+### Custom kafka producer
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.kafka_producer_karto
+```
+
+Mac/Linux:
+
+```zsh
+source .venv/bin/activate
+python3 -m producers.kafka_producer_karto
+```
+
+
+
 ## Task 4. Start a Kafka Consumer
 
 Consumers process data from topics or logs in real time.
@@ -104,6 +121,23 @@ Mac/Linux:
 source .venv/bin/activate
 python3 -m consumers.kafka_consumer_case
 ```
+
+### Custom Kafka Consumer
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m consumers.kafka_consumer_karto
+```
+
+Mac/Linux:
+
+```zsh
+source .venv/bin/activate
+python3 -m consumers.kafka_consumer_karto
+```
+
 
 ## Later Work Sessions
 
